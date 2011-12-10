@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Hulen.Storage" namespace="Hulen.Storage.DTO">
+
+  <class name="Hulen.Storage.DTO.MenuItemDTO, Hulen.Storage" table="MenuItem" lazy="false">
+    <id name ="Id" column="Id">
+      <generator class="native" />
+    </id>
+    <property name="Name" column="Name"/>
+    <property name="Action" column="Action"/>
+    <property name="Controller" column="Controller"/>
+    <property name="MenuLevel" column="MenuLevel"/>
+    <property name="Parent" column="Parent"/>
+    <property name="SortOrder" column="SortOrder"/>
+    <property name="IsLink" column="IsLink"/>
+    <property name="AccessGroup" column="AccessGroup"/>
+  </class>
+
+</hibernate-mapping>

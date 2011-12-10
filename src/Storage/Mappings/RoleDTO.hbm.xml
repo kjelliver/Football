@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Hulen.Storage" namespace="Hulen.Storage.DTO">
+
+  <class name="Hulen.Storage.DTO.RoleDTO, Hulen.Storage" table="Roles" lazy="false">
+    <id name ="Id" column="Id" />
+    <property name="Name" column="Name" />
+  </class>
+
+</hibernate-mapping>
